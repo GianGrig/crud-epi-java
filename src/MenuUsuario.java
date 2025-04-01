@@ -33,14 +33,14 @@ public class MenuUsuario {
         System.out.println("Usuario cadastrado com sucesso!");
     }
     static void listarUsuarios() {
-        System.out.println("\n--- Lista de EPIs ---");
+        System.out.println("\n--- Lista de Usuarios ---");
         for (int i = 0; i < usuario.size(); i++) {
             System.out.println(i + " - " + usuario.get(i));
         }
     }
     static void atualizarUsuario() {
         listarUsuarios();
-        System.out.print("Digite o índice do EPI a atualizar: ");
+        System.out.print("Digite o índice do Usuario: ");
         int index = input.nextInt();
         input.nextLine();
         if (index >= 0 && index < usuario.size()) {
@@ -54,12 +54,12 @@ public class MenuUsuario {
     }
     static void removerUsuario() {
         listarUsuarios();
-        System.out.print("Digite o índice do EPI a remover: ");
+        System.out.print("Digite o índice do Usuario: ");
         int index = input.nextInt();
         input.nextLine();
         if (index >= 0 && index < usuario.size()) {
             usuario.remove(index);
-            System.out.println("EPI removido.");
+            System.out.println("Usuario removido.");
         } else {
             System.out.println("Índice inválido.");
         }
