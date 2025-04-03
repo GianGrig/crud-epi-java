@@ -1,4 +1,4 @@
-package SistemaEPIs.Modelos.EPI;
+package SistemaEPIs.ClassesPrincipais.EPI;
 import java.util.ArrayList;
 
 public class EPI {
@@ -59,7 +59,7 @@ public class EPI {
             System.out.println("EPI atualizada com sucesso.");
         }
         else {
-            System.out.println("Índece invalido.");
+            System.out.println("Índece inválido.");
         }
     }
 
@@ -69,7 +69,7 @@ public class EPI {
             System.out.println("EPI removida com sucesso.");
         }
         else {
-            System.out.println("Índece invalido");
+            System.out.println("Índece inválido.");
         }
     }
 
