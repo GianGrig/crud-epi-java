@@ -71,7 +71,7 @@ public class Emprestimo {
         }
     }
 
-    public static void atualizarEmprestimo(int i, String nomeUsuario, String nomeEpi, String dataEmprestimo, String dataPrevistaDevolucao) {
+    public static void atualizarEmprestimo(int i, String novoNomeUsuario, String novoNomeEpi, String novaDataEmprestimo, String novaDataPrevistaDevolucao) {
         if (i >= 0 && i < emprestimos.size()) {
             Emprestimo emprestimo = emprestimos.get(i);
             emprestimo.setNomeUsuario(novoNomeUsuario);
@@ -85,7 +85,7 @@ public class Emprestimo {
         }
     }
 
-    public static void removerEmprestimo(int i, String nomeUsuario, String nomeEpi, String dataEmprestimo, String dataPrevistaDevolucao) {
+    public static void removerEmprestimo(int i) {
         if (i >= 0 && i < emprestimos.size()) {
             emprestimos.remove(i);
             System.out.println("Empréstimo removido com sucesso.");

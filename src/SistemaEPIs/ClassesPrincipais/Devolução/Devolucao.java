@@ -61,9 +61,9 @@ public class Devolucao {
         }
     }
 
-    public static void atualizarDevolucao(int i, String nomeUsuario, String nomeEpi, String dataDevolucao) {
+    public static void atualizarDevolucao(int i, String novoNomeUsuario, String novoNomeEpi, String novaDataDevolucao) {
         if (i >= 0 && i < devolucoes.size()) {
-            Devolucao devolucoes = new Devolucao(nomeUsuario, nomeEpi, dataDevolucao);
+            Devolucao devolucoes = new Devolucao(novoNomeUsuario, novoNomeEpi, novaDataDevolucao);
             devolucoes.setNomeUsuario(novoNomeUsuario);
             devolucoes.setNomeEpi(novoNomeEpi);
             devolucoes.setDataDevolucao(novaDataDevolucao);
@@ -74,7 +74,7 @@ public class Devolucao {
         }
     }
 
-    public static void remover(int i, String nomeUsuario, String nomeEpi, String dataDevolucao) {
+    public static void remover(int i) {
         if (i >= 0 && i < devolucoes.size()) {
             devolucoes.remove(i);
             System.out.println("Devolução removida com sucesso.");

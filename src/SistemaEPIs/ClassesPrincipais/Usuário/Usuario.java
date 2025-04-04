@@ -61,7 +61,7 @@ public class Usuario {
         }
     }
 
-    public static void atualizarUsuario(int i, String nome, String email, String cargo){
+    public static void atualizarUsuario(int i, String novoNome, String novoEmail, String novoCargo){
         if (i >= 0 && i < usuarios.size()){
             Usuario usuario = usuarios.get(i);
             usuario.setNome(novoNome);
@@ -74,7 +74,7 @@ public class Usuario {
         }
     }
 
-    public static void removerUsuario(int i, String nome, String email, String cargo) {
+    public static void removerUsuario(int i) {
         if (i >= 0 && i < usuarios.size()) {
             usuarios.remove(i);
             System.out.println("Usuário removido com sucesso.");

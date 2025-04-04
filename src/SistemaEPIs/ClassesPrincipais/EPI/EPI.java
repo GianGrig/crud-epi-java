@@ -51,7 +51,7 @@ public class EPI {
         }
     }
 
-    public static void autualizarEpi(int i, String nome, int quantidade) {
+    public static void autualizarEpi(int i, String novoNome, int novaQuantidade) {
         if (i >= 0 && i < epis.size()){
             EPI epi = epis.get(i);
             epi.setNome(novoNome);
@@ -63,7 +63,7 @@ public class EPI {
         }
     }
 
-    public static void removerEpi(int i, String nome, int quantidade){
+    public static void removerEpi(int i){
         if (i >= 0 && i < epis.size()){
             epis.remove(i);
             System.out.println("EPI removida com sucesso.");
