@@ -1,4 +1,4 @@
-package SistemaEPIs.ClassesPrincipais.Empréstimo;
+package SistemaEPIs.ClassesPrincipais.Emprestimo;
 
 import java.util.ArrayList;
 

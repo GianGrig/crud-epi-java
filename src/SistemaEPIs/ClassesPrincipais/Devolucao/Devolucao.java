@@ -1,4 +1,4 @@
-package SistemaEPIs.ClassesPrincipais.Devolução;
+package SistemaEPIs.ClassesPrincipais.Devolucao;
 
 import java.util.ArrayList;
 
@@ -74,7 +74,7 @@ public class Devolucao {
         }
     }
 
-    public static void remover(int i) {
+    public static void removerDevolucao(int i) {
         if (i >= 0 && i < devolucoes.size()) {
             devolucoes.remove(i);
             System.out.println("Devolução removida com sucesso.");

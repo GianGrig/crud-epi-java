@@ -51,7 +51,7 @@ public class EPI {
         }
     }
 
-    public static void autualizarEpi(int i, String novoNome, int novaQuantidade) {
+    public static void atualizarEpi(int i, String novoNome, int novaQuantidade) {
         if (i >= 0 && i < epis.size()){
             EPI epi = epis.get(i);
             epi.setNome(novoNome);

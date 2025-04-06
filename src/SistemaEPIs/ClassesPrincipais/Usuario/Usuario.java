@@ -1,4 +1,4 @@
-package SistemaEPIs.ClassesPrincipais.Usuário;
+package SistemaEPIs.ClassesPrincipais.Usuario;
 
 import java.util.ArrayList;
 
