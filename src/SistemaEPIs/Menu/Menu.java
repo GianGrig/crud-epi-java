@@ -20,7 +20,7 @@ public class Menu {
             System.out.println("3. Gerenciar Empréstimos");
             System.out.println("4. Gerenciar Devoluções");
             System.out.println("0. Sair");
-            System.out.println("Escolha: ");
+            System.out.print("Escolha: ");
             opcao = scanner.nextInt();
             scanner.nextLine();
 
@@ -105,6 +105,7 @@ public class Menu {
                 case 1 -> {
                     System.out.print("Nome do EPI: ");
                     String nome = scanner.nextLine();
+                    System.out.print("Quantidade em estoque: ");
                     int quantidade = scanner.nextInt();
                     scanner.nextLine();
                     EPI.cadastrarEpi(nome, quantidade);
@@ -117,10 +118,10 @@ public class Menu {
                     scanner.nextLine();
                     System.out.print("Novo nome: ");
                     String nome = scanner.nextLine();
-                    System.out.print("Nova validade (meses): ");
-                    int validade = scanner.nextInt();
+                    System.out.print("Nova quantidade: ");
+                    int quantidade = scanner.nextInt();
                     scanner.nextLine();
-                    EPI.atualizarEpi(i, nome, validade);
+                    EPI.atualizarEpi(i, nome, quantidade);
                 }
                 case 4 -> {
                     EPI.listarEpis();
@@ -153,7 +154,7 @@ public class Menu {
                 case 1 -> {
                     System.out.print("Nome do Usuário: ");
                     String usuario = scanner.nextLine();
-                    System.out.print("EPI emprestado: ");
+                    System.out.print("Nome da EPI: ");
                     String epi = scanner.nextLine();
                     System.out.print("Data do empréstimo: ");
                     String data = scanner.nextLine();
@@ -169,11 +170,11 @@ public class Menu {
                     scanner.nextLine();
                     System.out.print("Novo nome do usuário: ");
                     String usuario = scanner.nextLine();
-                    System.out.print("Novo EPI: ");
+                    System.out.print("Novo nome da EPI: ");
                     String epi = scanner.nextLine();
-                    System.out.print("Nova data: ");
+                    System.out.print("Nova data de empréstimo: ");
                     String data = scanner.nextLine();
-                    System.out.print("Data prevista do empréstimo: ");
+                    System.out.print("Nova data prevista do empréstimo: ");
                     String dataPrevistaEmp = scanner.nextLine();
                     Emprestimo.atualizarEmprestimo(i, usuario, epi, data, dataPrevistaEmp);
                 }
@@ -208,7 +209,7 @@ public class Menu {
                 case 1 -> {
                     System.out.print("Nome do Usuário: ");
                     String usuario = scanner.nextLine();
-                    System.out.print("EPI devolvido: ");
+                    System.out.print("Nome da EPI: ");
                     String epi = scanner.nextLine();
                     System.out.print("Data da devolução: ");
                     String data = scanner.nextLine();
@@ -222,9 +223,9 @@ public class Menu {
                     scanner.nextLine();
                     System.out.print("Novo nome do usuário: ");
                     String usuario = scanner.nextLine();
-                    System.out.print("Novo EPI: ");
+                    System.out.print("Novo nome da EPI: ");
                     String epi = scanner.nextLine();
-                    System.out.print("Nova data: ");
+                    System.out.print("Nova data da devolução: ");
                     String data = scanner.nextLine();
                     Devolucao.atualizarDevolucao(i, usuario, epi, data);
                 }

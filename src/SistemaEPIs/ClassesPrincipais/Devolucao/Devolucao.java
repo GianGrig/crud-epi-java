@@ -39,7 +39,7 @@ public class Devolucao {
 
     @Override
     public String toString() {
-        return nomeUsuario + " - Nome da Epi='" + nomeEpi + " - Data de Devolução='" + dataDevolucao;
+        return "Usuario: " + nomeUsuario + " - Epi: " + nomeEpi + " - Data de Devolução: " + dataDevolucao;
     }
 
     private static ArrayList<Devolucao> devolucoes = new ArrayList<>();
@@ -63,10 +63,10 @@ public class Devolucao {
 
     public static void atualizarDevolucao(int i, String novoNomeUsuario, String novoNomeEpi, String novaDataDevolucao) {
         if (i >= 0 && i < devolucoes.size()) {
-            Devolucao devolucoes = new Devolucao(novoNomeUsuario, novoNomeEpi, novaDataDevolucao);
-            devolucoes.setNomeUsuario(novoNomeUsuario);
-            devolucoes.setNomeEpi(novoNomeEpi);
-            devolucoes.setDataDevolucao(novaDataDevolucao);
+            Devolucao devolucao = devolucoes.get(i);
+            devolucao.setNomeUsuario(novoNomeUsuario);
+            devolucao.setNomeEpi(novoNomeEpi);
+            devolucao.setDataDevolucao(novaDataDevolucao);
             System.out.println("Devolução atualizada com sucesso.");
         }
         else {

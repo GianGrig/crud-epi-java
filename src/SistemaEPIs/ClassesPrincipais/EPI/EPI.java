@@ -29,7 +29,7 @@ public class EPI {
 
     @Override
     public String toString() {
-        return nome + " - Quantidade" + quantidade;
+        return "Nome: " + nome + " - Estoque: " + quantidade;
     }
 
     private static ArrayList<EPI> epis = new ArrayList<>();

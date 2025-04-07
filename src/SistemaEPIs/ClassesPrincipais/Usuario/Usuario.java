@@ -39,7 +39,7 @@ public class Usuario {
 
     @Override
     public String toString() {
-        return nome + " - Email: " + email + " - Cargo: " + cargo;
+        return "Nome: " + nome + " - Email: " + email + " - Cargo: " + cargo;
     }
 
     private static ArrayList<Usuario> usuarios = new ArrayList<>();

@@ -49,7 +49,7 @@ public class Emprestimo {
 
     @Override
     public String toString() {
-        return nomeUsuario + " - EPI: " + nomeEpi + " - Data do Empréstimo: " + dataEmprestimo + " - Data Prevista para Devolução: " + dataPrevistaDevolucao;
+        return "Usuario: " + nomeUsuario + " - EPI: " + nomeEpi + " - Data do Empréstimo: " + dataEmprestimo + " - Data Prevista para Devolução: " + dataPrevistaDevolucao;
     }
 
     private static ArrayList<Emprestimo> emprestimos = new ArrayList<>();
