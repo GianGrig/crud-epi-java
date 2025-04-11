@@ -1,4 +1,4 @@
-package SistemaEPIs.ClassesPrincipais.Devolucao;
+package SistemaEPIs.model;
 
 import java.util.ArrayList;
 

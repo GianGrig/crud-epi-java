@@ -1,4 +1,4 @@
-package SistemaEPIs.ClassesPrincipais.EPI;
+package SistemaEPIs.model;
 import java.util.ArrayList;
 
 public class EPI {

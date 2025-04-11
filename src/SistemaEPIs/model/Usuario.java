@@ -1,4 +1,4 @@
-package SistemaEPIs.ClassesPrincipais.Usuario;
+package SistemaEPIs.model;
 
 import java.util.ArrayList;
 
