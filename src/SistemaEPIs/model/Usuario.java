@@ -44,6 +44,10 @@ public class Usuario {
 
     private static ArrayList<Usuario> usuarios = new ArrayList<>();
 
+    public static ArrayList<Usuario> getUsuarios() {
+        return usuarios;
+    }
+
     public static void cadastrarUsuario(String nome, String email, String cargo) {
         usuarios.add(new Usuario(nome, email, cargo));
         System.out.println("Usuário cadastrado com sucesso.");
@@ -51,10 +55,10 @@ public class Usuario {
 
     public static void listarUsuarios() {
         if (usuarios.isEmpty()) {
-            System.out.println("Não a usuários cadastrados");
+            System.out.println("Não há usuários cadastrados");
         }
         else {
-            System.out.println("\n--- Lista de Usuários ---");
+            System.out.println("\n========= Lista de Usuários =========");
             for (int i = 0; i < usuarios.size(); i++) {
                 System.out.println(i + " - " + usuarios.get(i));
             }

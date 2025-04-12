@@ -54,6 +54,10 @@ public class Emprestimo {
 
     private static ArrayList<Emprestimo> emprestimos = new ArrayList<>();
 
+    public static ArrayList<Emprestimo> getEmprestimos() {
+        return emprestimos;
+    }
+
     public static void cadastrarEmprestimo(String nomeUsuario, String nomeEpi, String dataEmprestimo, String dataPrevistaDevolucao) {
         emprestimos.add(new Emprestimo(nomeUsuario, nomeEpi, dataEmprestimo, dataPrevistaDevolucao));
         System.out.println("Empréstimo cadastrado com sucesso.");
@@ -61,10 +65,10 @@ public class Emprestimo {
 
     public static void listarEmprestimos() {
         if (emprestimos.isEmpty()) {
-            System.out.println("Não a Empréstimos cadastrados.");
+            System.out.println("Não há Empréstimos cadastrados.");
         }
         else {
-            System.out.println("\n--- Lista de Empréstimos ---");
+            System.out.println("\n========= Lista de Empréstimos =========");
             for (int i = 0; i < emprestimos.size(); i++) {
                 System.out.println(i + " - " + emprestimos.get(i));
             }

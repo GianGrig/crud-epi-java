@@ -11,12 +11,13 @@ public class SubMenuUsuario {
         int opcao;
 
         do {
-            System.out.println("\n--- Menu de Usuários ---");
+            System.out.println("\n========= Menu de Usuários =========");
             System.out.println("1. Cadastrar Usuário");
             System.out.println("2. Listar Usuários");
             System.out.println("3. Atualizar Usuário");
             System.out.println("4. Remover Usuário");
             System.out.println("0. Voltar");
+            System.out.println("====================================");
             System.out.print("Escolha: ");
             opcao = scanner.nextInt();
             scanner.nextLine();
@@ -33,25 +34,34 @@ public class SubMenuUsuario {
                 }
                 case 2 -> Usuario.listarUsuarios();
                 case 3 -> {
-                    Usuario.listarUsuarios();
-                    System.out.print("Informe o índice do usuário a ser atualizado: ");
-                    int i = scanner.nextInt();
-                    scanner.nextLine();
-                    System.out.print("Novo nome: ");
-                    String novoNome = scanner.nextLine();
-                    System.out.print("Novo email: ");
-                    String novoEmail = scanner.nextLine();
-                    System.out.print("Novo cargo: ");
-                    String novoCargo = scanner.nextLine();
-
-                    Usuario.atualizarUsuario(i, novoNome, novoEmail, novoCargo);
+                    if (Usuario.getUsuarios().isEmpty()) {
+                        System.out.println("Não há usuários para atualizar.");
+                    }
+                    else {
+                        Usuario.listarUsuarios();
+                        System.out.print("Informe o índice do usuário a ser atualizado: ");
+                        int i = scanner.nextInt();
+                        scanner.nextLine();
+                        System.out.print("Novo nome: ");
+                        String novoNome = scanner.nextLine();
+                        System.out.print("Novo email: ");
+                        String novoEmail = scanner.nextLine();
+                        System.out.print("Novo cargo: ");
+                        String novoCargo = scanner.nextLine();
+                        Usuario.atualizarUsuario(i, novoNome, novoEmail, novoCargo);
+                    }
                 }
                 case 4 -> {
-                    Usuario.listarUsuarios();
-                    System.out.print("Informe o índice do usuário a ser removido: ");
-                    int i = scanner.nextInt();
-                    scanner.nextLine();
-                    Usuario.removerUsuario(i);
+                    if (Usuario.getUsuarios().isEmpty()) {
+                        System.out.println("Não há usuários para remover.");
+                    }
+                    else {
+                        Usuario.listarUsuarios();
+                        System.out.print("Informe o índice do usuário a ser removido: ");
+                        int i = scanner.nextInt();
+                        scanner.nextLine();
+                        Usuario.removerUsuario(i);
+                    }
                 }
                 case 0 -> System.out.println("Voltando ao Menu Principal.");
                 default -> System.out.println("Opção inválida.");

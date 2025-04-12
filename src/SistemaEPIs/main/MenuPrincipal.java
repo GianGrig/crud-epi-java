@@ -13,12 +13,13 @@ public class MenuPrincipal {
         int opcao;
 
         do {
-            System.out.println("\n--- Menu Principal ---");
+            System.out.println("\n========= Menu Principal =========");
             System.out.println("1. Gerenciar Usuários");
             System.out.println("2. Gerenciar EPIs");
             System.out.println("3. Gerenciar Empréstimos");
             System.out.println("4. Gerenciar Devoluções");
             System.out.println("0. Sair");
+            System.out.println("==================================");
             System.out.print("Escolha: ");
             opcao = scanner.nextInt();
             scanner.nextLine();

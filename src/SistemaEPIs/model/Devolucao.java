@@ -44,6 +44,10 @@ public class Devolucao {
 
     private static ArrayList<Devolucao> devolucoes = new ArrayList<>();
 
+    public static ArrayList<Devolucao> getDevolucoes() {
+        return devolucoes;
+    }
+
     public static void cadastrarDevolucao(String nomeUsuario, String nomeEpi, String dataDevolucao) {
         devolucoes.add(new Devolucao(nomeUsuario, nomeEpi, dataDevolucao));
         System.out.println("Devolução cadastrada com sucesso.");
@@ -51,10 +55,10 @@ public class Devolucao {
 
     public static void listarDevolucoes() {
         if (devolucoes.isEmpty()){
-            System.out.println("Não a devoluções cadastradas.");
+            System.out.println("Não há devoluções cadastradas.");
         }
         else {
-            System.out.println("\n--- Lista Devoluções ---");
+            System.out.println("\n========= Lista Devoluções =========");
             for (int i = 0; i < devolucoes.size(); i++) {
                 System.out.println(i + " - " + devolucoes.get(i));
             }

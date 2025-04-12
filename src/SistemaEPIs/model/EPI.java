@@ -34,6 +34,10 @@ public class EPI {
 
     private static ArrayList<EPI> epis = new ArrayList<>();
 
+    public static ArrayList<EPI> getEpis() {
+        return epis;
+    }
+
     public static void cadastrarEpi(String nome, int quantidade) {
         epis.add(new EPI(nome, quantidade));
         System.out.println("EPI cadastrada com sucesso.");
@@ -41,10 +45,10 @@ public class EPI {
 
     public static void listarEpis() {
         if (epis.isEmpty()){
-            System.out.println("Não a EPIs cadastradas.");
+            System.out.println("Não há EPIs cadastradas.");
         }
         else {
-            System.out.println("\n--- Lista de EPIs ---");
+            System.out.println("\n========= Lista de EPIs =========");
             for (int i = 0; i < epis.size(); i++) {
                 System.out.println(i + " - " + epis.get(i));
             }
