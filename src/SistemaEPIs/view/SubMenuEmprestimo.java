@@ -41,7 +41,7 @@ public class SubMenuEmprestimo {
                     }
                     else {
                         Emprestimo.listarEmprestimos();
-                        System.out.print("Índice do empréstimo a ser atualizado: ");
+                        System.out.print("Informe o índice do empréstimo que deseja atualizar: ");
                         int i = scanner.nextInt();
                         scanner.nextLine();
                         System.out.print("Novo nome do usuário: ");
@@ -61,7 +61,7 @@ public class SubMenuEmprestimo {
                     }
                     else {
                         Emprestimo.listarEmprestimos();
-                        System.out.print("Índice do empréstimo a ser removido: ");
+                        System.out.print("Informe o índice do empréstimo que deseja remover: ");
                         int i = scanner.nextInt();
                         scanner.nextLine();
                         Emprestimo.removerEmprestimo(i);

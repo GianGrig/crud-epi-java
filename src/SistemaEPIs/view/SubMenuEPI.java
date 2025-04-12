@@ -39,7 +39,7 @@ public class SubMenuEPI {
                     }
                     else {
                         EPI.listarEpis();
-                        System.out.print("Índice do EPI a ser atualizado: ");
+                        System.out.print("Informe o índice da EPI que deseja atualizar: ");
                         int i = scanner.nextInt();
                         scanner.nextLine();
                         System.out.print("Novo nome: ");
@@ -56,7 +56,7 @@ public class SubMenuEPI {
                     }
                     else {
                         EPI.listarEpis();
-                        System.out.print("Índice do EPI a ser removido: ");
+                        System.out.print("Informe o índice da EPI que deseja remover: ");
                         int i = scanner.nextInt();
                         scanner.nextLine();
                         EPI.removerEpi(i);

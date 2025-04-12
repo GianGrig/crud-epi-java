@@ -50,12 +50,12 @@ public class Devolucao {
 
     public static void cadastrarDevolucao(String nomeUsuario, String nomeEpi, String dataDevolucao) {
         devolucoes.add(new Devolucao(nomeUsuario, nomeEpi, dataDevolucao));
-        System.out.println("Devolução cadastrada com sucesso.");
+        System.out.println("Devolução registrada com sucesso.");
     }
 
     public static void listarDevolucoes() {
         if (devolucoes.isEmpty()){
-            System.out.println("Não há devoluções cadastradas.");
+            System.out.println("Nenhum devolução foi registrado até o momento.");
         }
         else {
             System.out.println("\n========= Lista Devoluções =========");

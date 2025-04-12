@@ -39,7 +39,7 @@ public class SubMenuUsuario {
                     }
                     else {
                         Usuario.listarUsuarios();
-                        System.out.print("Informe o índice do usuário a ser atualizado: ");
+                        System.out.print("Informe o índice do usuário que deseja atualizar: ");
                         int i = scanner.nextInt();
                         scanner.nextLine();
                         System.out.print("Novo nome: ");
@@ -57,7 +57,7 @@ public class SubMenuUsuario {
                     }
                     else {
                         Usuario.listarUsuarios();
-                        System.out.print("Informe o índice do usuário a ser removido: ");
+                        System.out.print("Informe o índice do usuário que deseja remover: ");
                         int i = scanner.nextInt();
                         scanner.nextLine();
                         Usuario.removerUsuario(i);

@@ -39,7 +39,7 @@ public class SubMenuDevolucao {
                     }
                     else {
                         Devolucao.listarDevolucoes();
-                        System.out.print("Índice da devolução a ser atualizada: ");
+                        System.out.print("Informe o índice da devolução que deseja atualizar: ");
                         int i = scanner.nextInt();
                         scanner.nextLine();
                         System.out.print("Novo nome do usuário: ");
@@ -57,7 +57,7 @@ public class SubMenuDevolucao {
                     }
                     else {
                         Devolucao.listarDevolucoes();
-                        System.out.print("Índice da devolução a ser removida: ");
+                        System.out.print("Informe o índice da devolução que deseja remover: ");
                         int i = scanner.nextInt();
                         scanner.nextLine();
                         Devolucao.removerDevolucao(i);

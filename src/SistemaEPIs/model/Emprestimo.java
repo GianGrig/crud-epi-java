@@ -60,12 +60,12 @@ public class Emprestimo {
 
     public static void cadastrarEmprestimo(String nomeUsuario, String nomeEpi, String dataEmprestimo, String dataPrevistaDevolucao) {
         emprestimos.add(new Emprestimo(nomeUsuario, nomeEpi, dataEmprestimo, dataPrevistaDevolucao));
-        System.out.println("Empréstimo cadastrado com sucesso.");
+        System.out.println("Empréstimo registrado com sucesso.");
     }
 
     public static void listarEmprestimos() {
         if (emprestimos.isEmpty()) {
-            System.out.println("Não há Empréstimos cadastrados.");
+            System.out.println("Nenhum empréstimo foi registrado até o momento.");
         }
         else {
             System.out.println("\n========= Lista de Empréstimos =========");
